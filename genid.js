@@ -26,7 +26,7 @@ a single instance of this application running on an IP address.
 
 Another limitation is Javascript's handling of large numbers. The reason
 the instance ID is restricted to the number 15 and the sequence counter to 
-the number 256 is that shifting the timestamp too many bits left causes an 
+the number 255 is that shifting the timestamp too many bits left causes an 
 overflow. It is possible that the timestamp may become too large and cause 
 this overflow to occur even with the currently imposed limits.  This will
 happen around the year 2079. If you adjust the starting epoch you could
