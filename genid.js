@@ -32,6 +32,10 @@ this overflow to occur even with the currently imposed limits.  This will
 happen around the year 2079. If you adjust the starting epoch you could
 get around 69 years of reliable use.
 
+One more limitation is that the date and times on each server running an
+instance of this application must be synchronized and accurate for the 
+ordering of generated ID values to work well.
+
 Licensed with the MIT license
 -----------------------------
 Copyright (c) 2011 Stephen Perelson
