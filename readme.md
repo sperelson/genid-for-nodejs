@@ -9,6 +9,8 @@ and more limitations. It only handles 16 application instances (starting at
 0) and only copes with 256 iterations within a single millisecond with 
 rollover protection.
 
+It can generate just over 6000 IDs/second on my 13" Macbook Pro.
+
 ## Missing functionality
 The unique instance ID is hard-coded. It is trivial to pass through an ID 
 as a startup argument and then initialize the id variable to this value:
