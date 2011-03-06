@@ -94,7 +94,7 @@ function createKey(req, res)
 		var id2 = id * Math.pow(2, 8);
 		var uid = millis + id2 + counter;
 		res.writeHead(200, {'Content-Type': 'application/json'});
-		res.end('{"id":"' + uid + ' ' + Date.UTC(2079, 2, 1) +'"}\n');
+		res.end('{"id":"' + uid + '"}\n');
 	}
 }
 
