@@ -69,7 +69,7 @@ var http = require('http');
 function createKey(req, res)
 {
 	protectRollover = false;
-	// 01 Jan 2010 is a good epoch. Use
+	// 01 Jan 2010 is the selected epoch. Use
 	// 		Date.UTC(2010,0,1)
 	// to get this number (1262304000000)
 	var millis = new Date().getTime() - 1262304000000;
@@ -97,7 +97,6 @@ function createKey(req, res)
 		res.end('{"id":"' + uid + '"}\n');
 	}
 }
-
 http.createServer(function (req, res) {
 	createKey(req, res);
 }).listen(process.env.PORT || 8543);
